@@ -5,13 +5,14 @@ import firebase from 'firebase'
 export class Register extends Component {
     constructor(props) {
         super(props)
+        this.onSignUp = this.onSignUp.bind(this)
         this.state = {
             email: '',
             password: '',
             name: ''
         }
     }
-    this.onSignUp = this.onSignUp.bind(this)
+    
 
     onSignUp() {
         const {email,password,name} = this.state
